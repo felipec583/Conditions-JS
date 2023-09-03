@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500&display=swap");
+
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+.top {
+  display: flex;
+  padding: 0.3em;
+  border: 1px solid black;
+  margin-top: 0.3em;
+  align-items: center;
+  width: 50%;
+  justify-self: center;
+  margin: 0.5em 0;
+}
+
+a {
+  margin-left: auto;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 5px;
+  transition: 0.2s ease-out;
+  font-size: 2rem;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+.password-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.password-select {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.password-select > * {
+  flex: 1;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.btn,
+select {
+  font-size: 1.5rem;
+}

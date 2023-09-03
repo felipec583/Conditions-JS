@@ -1,0 +1,56 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 800px;
+}
+
+.hidden {
+  border: none;
+}
+
+.top {
+  display: flex;
+  padding: 0.3em;
+  border: 1px solid black;
+  margin-top: 0.3em;
+  align-items: center;
+}
+
+a {
+  margin-left: auto;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 5px;
+  transition: 0.2s ease-out;
+  font-size: 2rem;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+}
