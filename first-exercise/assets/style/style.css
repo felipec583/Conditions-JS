@@ -54,3 +54,7 @@ a:hover {
   background-color: black;
   color: white;
 }
+
+.img-border {
+  border: 2px solid red;
+}
