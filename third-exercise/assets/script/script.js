@@ -1,12 +1,13 @@
 const checkPasswordButton = document.querySelector(".btn");
 let message = document.querySelector(".message");
+const getFirstOptionPassword = document.querySelector("#first-col");
+const getSecondOptionPassword = document.querySelector("#sec-col");
+const getThirdOptionPassword = document.querySelector("#third-col");
 
 checkPasswordButton.addEventListener("click", () => {
-  const getFirstOptionPasswordValue =
-    document.querySelector("#first-col").value;
-  const getSecondOptionPasswordValue = document.querySelector("#sec-col").value;
-  const getThirdOptionPasswordValue =
-    document.querySelector("#third-col").value;
+  const getFirstOptionPasswordValue = getFirstOptionPassword.value;
+  const getSecondOptionPasswordValue = getSecondOptionPassword.value;
+  const getThirdOptionPasswordValue = getThirdOptionPassword.value;
 
   const password =
     getFirstOptionPasswordValue +

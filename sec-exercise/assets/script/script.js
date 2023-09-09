@@ -1,21 +1,23 @@
 // Declaración de variables
 const checkStickerNumberBtn = document.querySelector(".btn");
 let message = document.querySelector(".message");
+const getFirstStickerInput = document.querySelector(".first");
+const getSecondStickerInput = document.querySelector(".second");
+const getThirdStickerInput = document.querySelector(".third");
 
 //Evento
 checkStickerNumberBtn.addEventListener("click", () => {
-  const getFirstStickerNumber = Number(document.querySelector(".first").value);
-  const getSecondStickerNumber = Number(
-    document.querySelector(".second").value
-  );
-  const getThirdStickerNumber = Number(document.querySelector(".third").value);
+  const getFirstStickerNumber = Number(getFirstStickerInput.value);
+  const getSecondStickerNumber = Number(getSecondStickerInput.value);
+  const getThirdStickerNumber = Number(getThirdStickerInput.value);
   const getStickerNumberSum =
     getFirstStickerNumber + getSecondStickerNumber + getThirdStickerNumber;
 
   if (
     getFirstStickerNumber < 0 ||
     getSecondStickerNumber < 0 ||
-    getThirdStickerNumber < 0
+    getThirdStickerNumber < 0 ||
+    isNaN(getStickerNumberSum)
   ) {
     message.innerHTML = "Ingresa solo número positivos";
   } else {
